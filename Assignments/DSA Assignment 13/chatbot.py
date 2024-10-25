@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyDKTQG4QEVPTwbKwiGpT_cHM1Pf_EtGbbY")
+genai.configure(api_key="your api key")
 model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat(history=[])
 chat.send_message("From here on only respond in Yoda speak")
